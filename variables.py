@@ -1,8 +1,6 @@
 # variables  dataType  typeCasting
 
 # variables
-from os import times
-
 
 var = "ujjwal is a good boy"  # string
 var1 = 12   # integer
