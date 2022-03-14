@@ -59,3 +59,8 @@ print("Enter 2nd number")
 b = input()
 # converting into a int type because by defualt they are string type
 print("Addition of two number is ", int(a)+int(b))
+
+
+# single line input method
+a = input("enter a number: ")
+print("your number is", a)
