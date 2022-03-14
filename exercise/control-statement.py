@@ -5,6 +5,7 @@
 # if equal to 18 than print we cannot decide
 
 print("enter your age: ")
+# input is by defualt string type so, converting into integer type for apply if else
 age = int(input())
 
 if (age > 18):
