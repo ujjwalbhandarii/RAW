@@ -23,6 +23,10 @@ reverse(): Reverses the order of the list.
 copy():  Returns a duplicate of the list.
 """
 
+li = []
+print(type(li))
+print(" ")      # this line is for one line gap between other codes
+
 ujjwalNames = ["ram", "hari", "handsome", "hero", 14]  # this is a list
 print(ujjwalNames)
 
@@ -87,6 +91,10 @@ print(" ")
 # immutable tuple -- cannot change
 
 # tuples are immuatble i.e. cannot be changed
+
+ti = ()
+print(type(ti))
+
 tuple = (1, 2, 3)  # small brackets is used in tuple
 print(tuple)
 
