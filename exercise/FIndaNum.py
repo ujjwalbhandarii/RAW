@@ -13,6 +13,7 @@ while noOfGuesses < 9:
 
     if(num == 18):
         print("wow! found the number")
+        print("you found a number and", 8 - noOfGuesses ,"guess still remain")
         break
 
     elif(num > 18):
