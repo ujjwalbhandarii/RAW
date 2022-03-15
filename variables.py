@@ -64,3 +64,43 @@ print("Addition of two number is ", int(a)+int(b))
 # single line input method
 a = input("enter a number: ")
 print("your number is", a)
+
+
+# unpacking 
+# If you have a collection of values in a list, tuple etc. 
+# Python allows you to extract the values into variables. This is called unpacking.
+print(" ")
+
+names = ["ujjwal", "ankit"," siddhartha","prabesh"]
+x, y, z, w = names  # unpacking
+
+print(x, y, z, w)
+
+
+# we can also use + operator to print the multiple output
+x, y, z = "ujjwal", "hari", "anu"
+print(x + y + z)  
+# however comma is the best way to print multiple output because it suports different data type 
+# and also + cannot print mixed datatype i.e (string + integer type) ---> error
+
+
+# global scope and local scope
+x = "ujjwal"
+
+def tryFun():
+    x = "anu"
+    print("she is", x, "and she is beautiful")
+
+tryFun()
+
+print(x, "he is hency as hell")
+
+
+# global keyword is used inside a funtion to make it gloabally
+def part1():
+    global x
+    x = "ujjwal"
+
+part1()
+print(x)
+# we can also use global keyword inside a function to change a outside funtion global variable
