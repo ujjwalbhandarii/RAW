@@ -12,8 +12,7 @@ while noOfGuesses < 9:
     num = int(input("Enter a number: "))
 
     if(num == 18):
-        print("wow! found the number")
-        print("you found a number and", 8 - noOfGuesses ,"guess still remain")
+        print("WOW! you found a number and", 8 - noOfGuesses ,"guess still remain")
         break
 
     elif(num > 18):
@@ -34,4 +33,5 @@ while noOfGuesses < 9:
         print("Invalid Input")
         continue
 
-print("game over")
+if noOfGuesses == 9:
+    print("\ngame over\n")
