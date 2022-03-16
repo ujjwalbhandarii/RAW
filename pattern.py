@@ -40,6 +40,14 @@ for i in range(4):  # columns
         print("# ", end="")
     print()    # when j loop done his work this line will shift in another line
 
+# this can also work
+num = int(input("Enter the number: "))
+for i in range(num,0,-1):
+    for j in range(0,i-1):
+        print("# ",end="")
+    print()
+
+
 
 
 
