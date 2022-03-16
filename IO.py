@@ -8,9 +8,24 @@
 " b " --  binary mode
 " + " --  read + write
 
+Some functions :
+write()
+read()
+readline()
+readline()
+seek()
+tell()
+close()
+
+block to open python file
+with open("ujjwal.txt") as f:         # it is not necessary to close the file in this method.
+
 """
 
 # to open file
+from io import SEEK_CUR
+
+
 f = open("sensativeInfo.txt")
 content = f.read()
 print(content)
@@ -87,3 +102,47 @@ f.write("\nthis content will be added")   # this will write agian
 
 
 f.close()
+
+
+# tell()  --- tells where is file handel
+
+f = open("sensativeInfo.txt","r")
+print(f.tell())
+
+print(f.readline())
+print(f.tell())
+
+print(f.readline())
+print(f.tell())
+
+print(f.readline())
+print(f.tell())
+
+print(f.readline())
+print(f.tell())
+
+
+# seek()   --- function reset our file handel and put in a desire location
+
+f = open("sensativeInfo.txt","r")
+
+
+print(f.readline())
+
+print(f.readline())
+print(f.tell())
+
+print(f.readline())
+f.seek(0)      # jump to 1st readline() function
+
+print(f.readline())
+
+
+
+
+# using block to open python file
+
+with open("ujjwal.txt") as f:
+    a = f.read(4)
+    print(a)
+# file closing is not necessary
