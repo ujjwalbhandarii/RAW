@@ -34,15 +34,15 @@ while chance < 10:
             # print("You are on 2")
             if(Rnum == 1):
                 print("You Win. \nSake downed")
-                chance+=1
+                chance=chance+1
                 continue
             if(Rnum == 2):
                 print("This is tie")
-                chance+1
+                chance=chance+1
                 continue
             if(Rnum == 3):
                 print("Gun get into water.\nYou win")
-                chance+1
+                chance=chance+1
                 continue
         
 
@@ -52,15 +52,15 @@ while chance < 10:
             # print("You are on 2")
             if(Rnum == 1):
                 print("You Win. \nYou killed snake")
-                chance+=1
+                chance=chance+1
                 continue
             if(Rnum == 2):
                 print("You loose.\nGun downed in water")
-                chance+1
+                chance=chance+1
                 continue
             if(Rnum == 3):
                 print("This is a tie match")
-                chance+1
+                chance=chance+1
                 continue
 
 
