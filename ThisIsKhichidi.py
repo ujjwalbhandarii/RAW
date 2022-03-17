@@ -108,3 +108,12 @@ print(popElement)
 list9 = ["apple","anu","chuppa"]
 del list9[2]
 print(list9)
+
+
+
+
+
+# using join function
+print()
+a = " and ".join(noramalList)
+print(a)
