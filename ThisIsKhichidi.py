@@ -117,3 +117,55 @@ print(list9)
 print()
 a = " and ".join(noramalList)
 print(a)
+print()
+
+
+# using clear function 
+list9.clear()
+print(list9)
+print()
+
+# using remove function
+list9 = ["apple","anu","chuppa"]
+list9.remove("apple")
+print(list9)
+print()
+
+
+# using pop function
+list9 = ["apple","anu","chuppa"]
+list9.pop(1)   # if do not specify the pop parameter then last element will be removed 
+print(list9)
+print()
+
+
+list9 = ["apple","anu","chuppa"]
+del list9[1]
+print(list9)
+print()
+
+
+# loop through the list
+thislist = ["ujjwal", "bhandari","anu"]
+for i in thislist:
+     print(i)
+print()
+
+# Loop Through the Index Numbers
+# You can also loop through the list items by referring to their index number.
+# Use the range() and len() functions to create a suitable iterable.
+thislist = ["ujjwal", "bhandari","anu"]
+for i in range(len(thislist)):
+      print(thislist[i])
+print()
+
+
+
+# while loop
+
+list = ["ujjwal","sid","anu"]
+i = 0 
+
+while i< len(list):
+    print(list[i])
+    i +=1
