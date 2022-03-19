@@ -169,3 +169,109 @@ i = 0
 while i< len(list):
     print(list[i])
     i +=1
+print()
+
+# list comprehension
+
+alist = ["ujjwal","sid","anu"]
+newlist = []
+for x in alist:
+    if "a" in x:
+        newlist.append(x)
+print(newlist)
+print()
+
+# printing list in one line
+fruits = ["apple",'ball','mango','pinapple','ujjwal','hari','wter']
+[print(i) for i in fruits]
+print()
+
+# another example
+fruits = ["apple",'ball','mango','pinapple','ujjwal','hari','wter']
+newList = []
+
+for i in fruits:
+    if "a" in i:
+        newList.append(i)
+
+print(newList)
+print()
+
+# short form of this 
+newList1 = [i for i in fruits if "a" in i ]
+print(newList)
+print()
+
+
+
+# sort in acending order
+num = [13, 1781, 1221,12149]
+num.sort()
+print(num)
+print()
+
+# sort the list in decending order 
+num = [13, 1781, 1221,12149]
+num.sort(reverse=True)
+print(num)
+
+
+# sort by uisng custom function
+num = [13, 1781, 1221,12149]
+def sortt(n):
+    return abs(n-50)
+num.sort(key = sortt)
+print(num)
+# The abs() function returns the absolute value of the given number. 
+# If the number is a complex number, abs() returns its magnitude.
+
+
+
+# if you want a case-insensitive sort function, use str.lower as a key function:
+fruits = ["apple",'ball','Mango','pinapple','Ujjwal','hari','wter']
+fruits.sort(key=str.lower) # or srt.upper as you want to print
+print(fruits)
+
+
+# reverse function  -- reverse the list of element 
+fruits = ["apple",'ball','Mango','pinapple','Ujjwal','hari','wter']
+fruits.reverse()
+print(fruits)
+print()
+
+
+# copying a list
+list1 = ["copy"," list 1"]
+list2 = list1.copy()
+print(list2) 
+
+# or by using a build in method "list"
+# listtt1 = ["copy"," list 1"]
+# listtt2 = list(listtt1) 
+# print(listtt2)
+
+# error list item are not collable
+
+
+
+
+
+
+# joining a list
+list1 = ["list1",'list2']
+list = ["join"]
+new = list + list1
+print(new)
+
+# or by using append function 
+list = [1,2,3]
+appendl = ['a','b','c']
+for i in appendl:
+    list.append(i)  # this will push the append element to list 
+print(list)
+
+# or by using extend method
+list = [1,2,3]
+appendl = ['a','b','c']
+list.extend(appendl)   # this will extend the append element to list
+print(list)

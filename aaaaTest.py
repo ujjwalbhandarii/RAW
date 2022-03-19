@@ -1,12 +1,8 @@
-def farg(fun1):
-    def farg2():
-        print("executing now")
-        fun1()
-        print("executed")
-    return farg2
+def myfunc(n):
+  return abs(n - 50)
 
-def decoratorF():
-    print("hy there form decoratorF")
+thislist = [100, 50, 65, 82, 23]
 
-decoratorF = farg(decoratorF)
-decoratorF()
+thislist.sort(key = myfunc)
+
+print(thislist)
