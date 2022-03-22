@@ -1,1 +1,1 @@
-console.log("While Learning")
+console.log("Hello world")
