@@ -3,6 +3,8 @@
 # abstractmethod --> decorator
 from abc import ABCMeta, abstractmethod
 
+# this is abstract base class
+
 
 class Shape(metaclass=ABCMeta):  # can also write " ABC "
     @abstractmethod
@@ -25,3 +27,6 @@ class Rectange(Shape):
 ujjwal = Rectange()
 
 print(ujjwal.printarea())
+
+
+# note --> we can make objects of abstact base class
