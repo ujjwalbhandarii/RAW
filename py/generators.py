@@ -22,11 +22,11 @@ def gen(n):
 # g = gen(12316712871827178812)
 g = gen(12)
 print(g)
-print(g.__next__())  # 0
-print(g.__next__())  # 1
-print(g.__next__())  # 2
-print(g.__next__())  # 3
-print(g.__next__())  # 4
+print(g.__next__())  # print 0
+print(g.__next__())  # print 1
+print(g.__next__())  # print 2
+print(g.__next__())  # print 3
+print(g.__next__())  # print 4
 print()  # for new line
 
 
