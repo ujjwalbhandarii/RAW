@@ -40,4 +40,4 @@ let myObj2 = {
   },
 };
 
-console.log(myObj2.homeFun());
+console.log(myObj2.homeFun);
