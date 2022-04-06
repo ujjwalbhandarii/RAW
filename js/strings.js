@@ -39,3 +39,21 @@ console.log(text3.concat(text1, " ", text2));
 let usingTrim = "           This        Is      Triming";
 let testingTrim = usingTrim.trim();
 console.log(testingTrim.length);
+console.log("");
+
+let strin1 = "hy this is a sring";
+console.log(strin1.length);
+
+let str2 = "this is my name.\nwhat the hell you dont know my name";
+console.log(str2);
+
+// use of new keyboard
+
+let str12 = "ram";
+let y = new String("ram");
+
+console.log(typeof str12 + " ", typeof y); // + can also be used and ,(comma) can also be used
+
+// Do not create Strings objects.
+// The new keyword complicates the code and slows down execution speed.
+// String objects can produce unexpected results:
